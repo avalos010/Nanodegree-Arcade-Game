@@ -75,6 +75,10 @@ else if(input === 'right' && this.x < this.max_X) {
 }
 else if(input === 'up' && this.y > this.min_Y) {
     this.y -= 90
+    if(this.y === -50) {
+        alert('You Win!!');
+        this.y = 400;
+    }
 }
 else if(input === 'down' && this.y < this.max_Y) {
     this.y += 90
